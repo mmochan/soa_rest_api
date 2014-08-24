@@ -1,6 +1,6 @@
 == SOA REST API
 
-This application is an in progress Rails application that provides a REST API for accessing the Management Beans of an Oracle WebLogic server. A managed bean (MBean) is a Java bean that provides a Java Management Extensions (JMX) interface. JMX is the J2EE solution for monitoring and managing resources on a network. Like SNMP and other management standards, JMX is a public specification and many vendors of commonly used monitoring products support it.
+Rails application that provides a REST API for accessing the Management Beans of an Oracle WebLogic server. A managed bean (MBean) is a Java bean that provides a Java Management Extensions (JMX) interface. JMX is the J2EE solution for monitoring and managing resources on a network. Like SNMP and other management standards, JMX is a public specification and many vendors of commonly used monitoring products support it.
 
 WebLogic Server provides a set of MBeans that you can use to configure, monitor, and manage WebLogic Server resources through JMX. 
 
