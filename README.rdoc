@@ -6,7 +6,7 @@ WebLogic Server provides a set of MBeans that you can use to configure, monitor,
 
 
 * Ruby version - 
-  This has only been tested on jruby 1.7.13
+  This has only been tested on JRuby 1.7.13
 
 * Configuration - 
   Requires the CLASSPATH to be set for wlfullclient.jar unless you want to use Trinidad in which case place the wlfullclient.jar in the  lib/java directory of this rails app.
