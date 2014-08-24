@@ -1,0 +1,52 @@
+== SOA REST API
+
+This application is an in progress Rails application that provides a REST API for accessing the Management Beans of an Oracle WebLogic server. A managed bean (MBean) is a Java bean that provides a Java Management Extensions (JMX) interface. JMX is the J2EE solution for monitoring and managing resources on a network. Like SNMP and other management standards, JMX is a public specification and many vendors of commonly used monitoring products support it.
+
+WebLogic Server provides a set of MBeans that you can use to configure, monitor, and manage WebLogic Server resources through JMX. 
+
+
+* Ruby version - 
+  This has only been tested on jruby 1.7.13
+
+* Configuration - 
+  Requires the CLASSPATH to be set for wlfullclient.jar unless you want to use Trinidad in which case place the wlfullclient.jar in the  lib/java directory of this rails app.
+
+=== Instructions for building the wlfullclient.jar 
+
+http://docs.oracle.com/cd/E12840_01/wls/docs103/client/jarbuilder.html
+http://docs.oracle.com/cd/E24329_01/web.1211/e24378/jarbuilder.html
+
+=== Getting started
+    git clone git@github.com:mmochan/soa_rest_api.git
+    rake db:migrate
+=== Start the server
+    rails s puma
+    http://localhost:3000/admin
+
+=== Login at 
+    http://localhost:3000/admin
+
+    user: admin@example.com
+    password: password
+
+Add your weblogic environment configuration from the 'environments' tab
+
+== API Usage
+
+Currently only supporting JDBC configurations and composite deployments, although JMS is sort of there.
+
+* List environments 
+    http://localhost:3000/v1/environments
+* Show specific Environment
+    http://localhost:3000/v1/my_dev_environment
+* Show runtime server stats
+    http://localhost:3000/v1/my_dev_environment/config
+* Show the JDBC datasource configuration
+    http://localhost:3000/v1/my_dev_environment/config/jdbc
+* Show the JMS configuration
+    http://localhost:3000/v1/my_dev_environment/config/jms
+* List the deployed Composites ( Only available on SOA Servers)
+    http://localhost:3000/v1/my_dev_environment/config/composites
+
+
+

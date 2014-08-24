@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+env1:
+  name: tst-ofmw-501
+  protocol: t3
+  adminUrl: wls-as-vip.tst.bcc.qld.gov.au
+  user: weblogic
+  password: weblogicd3v
+  port: 7001
+
+env2:
+  name: uat-idam-101 
+  protocol: t3
+  adminUrl: idm-idmas-vip.uat.bcc.qld.gov.au
+  user: weblogic
+  password: CIEsG4I4VjqE
+  port: 7001
+
+
