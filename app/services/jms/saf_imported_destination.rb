@@ -1,0 +1,2 @@
+class SafImportedDestination
+end

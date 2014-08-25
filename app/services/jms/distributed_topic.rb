@@ -1,0 +1,3 @@
+class DistributedTopic
+
+end
