@@ -1,1 +1,3 @@
-quota.rb
+class Quota
+
+end

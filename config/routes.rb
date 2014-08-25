@@ -19,9 +19,6 @@ Rails.application.routes.draw do
     get ':name/config/jdbc', to:  'mbeans#jdbc_domain_configuration'
     get ':name/config/jms', to:  'mbeans#jms_domain_configuration'
     get ':name/config/composites', to:  'mbeans#composite_deployments'
-
-    #get ':name/config/jdbc/datasources', to:  'mbeans#domainservice_jdbc_datasource'    
-
-    
+   
   end  
 end

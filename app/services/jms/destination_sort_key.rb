@@ -1,1 +1,3 @@
-destination_sort_key.rb
+class DestinationSortKey
+
+end
