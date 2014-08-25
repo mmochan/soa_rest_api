@@ -1,5 +1,3 @@
-
-
 class JmsDomainConfiguration < MbeanConnection
 
   attr_accessor :data
@@ -15,6 +13,7 @@ class JmsDomainConfiguration < MbeanConnection
     connection_factories.each do |factory|
      fname = getattr(factory, "Name")
      data[:jms][:resources][name]['ConnectionFactories'][fname] = {}
+     data[:jms][:resources][name]['ConnectionFactories'][fname]['attrs'] = "Testing"
      ConnectionFactory.new
     end
   end

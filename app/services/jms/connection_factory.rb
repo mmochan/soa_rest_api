@@ -1,12 +1,8 @@
-class ConnectionFactory
-
+class ConnectionFactory < JmsDomainConfiguration
   def initialize
-    super
-  end
-
-  def attrs
-    data[:jms][:resources][name]['ConnectionFactories'][fname][:attrs] = {}
-    
+    puts "HEllo"
   end
 
 end
+
+
