@@ -1,3 +1,3 @@
-class ConnectionFactory
+class ConnectionFactory < JmsDomainConfiguration
 
 end

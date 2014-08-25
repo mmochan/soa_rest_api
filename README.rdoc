@@ -21,6 +21,8 @@ http://docs.oracle.com/cd/E24329_01/web.1211/e24378/jarbuilder.html
     rake db:migrate
 === Start the server
     rails s puma
+    http://localhost:3000/admin
+
 === Login at 
     http://localhost:3000/admin
 

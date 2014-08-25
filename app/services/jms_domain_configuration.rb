@@ -13,6 +13,7 @@ class JmsDomainConfiguration < MbeanConnection
     connection_factories.each do |factory|
      fname = getattr(factory, "Name")
      data[:jms][:resources][name]['ConnectionFactories'][fname] = {}
+     #TODO 
     end
   end
 
